@@ -1,5 +1,7 @@
 # Opencore-T470s
 
+***It should go without saying but I will say it anyway. Hackintoshing is dangerous and could ruin your hardware permanently, I take no responsibility for your stuff, please Hackintosh at your own risk. I own nothing, everything belongs to Apple/Lenovo/OpenCore Team. Thanks.***
+
 I'm creating this repository for those who might be trying to Hackintosh a computer that is similar to mine. I will continue to update the repository every few weeks/months as I improve my ACPI and Kext loadout. 
 
 Currently running 10.5.6 Catalina on OC 0.5.9
