@@ -1,4 +1,5 @@
-# Opencore-T470s
+# Lenovo Thinkpad T470s 
+## Opencore Hackintosh
 
 ***It should go without saying but I will say it anyway. Hackintoshing is dangerous and could ruin your hardware permanently, I take no responsibility for your stuff, please Hackintosh at your own risk. I own nothing, everything belongs to Apple/Lenovo/OpenCore Team. Thanks.***
 
@@ -27,7 +28,7 @@ Currently running 10.5.6 Catalina on OC 0.5.9
 
 ### Currently functioning:
 
-1. All basic functions including sleep/wake and boot without error 
+1. All basic functions including sleep/wake and boot without error including iCloud Services and Wired Ipad Sidecar
 2. Trackpoint and Trackpad with gesture support and Keypad buttons function as well
 3. Touchscreen
 4. Cardreader @ usb 3.0 speeds
@@ -49,8 +50,11 @@ Due to system instability being caused by SSDT-KBD.aml, I have removed the ssdt 
 
 ## Installation Instructions:
 
-Please follow Dortania OC Vanilla guide to create ACPI, gather Kexts, and create installer. I would recommend reading through the entire process even if you are going to just copy paste this repo into your EFI folder; it will give you the ability to debug and upgrade your OC install in the future. 
-
+1. Please follow Dortania OpenCore Vanilla guide to create ACPI, gather Kexts, and create installer. I would recommend reading through the entire process even if you are going to just copy paste this repo into your EFI folder; it will give you the ability to debug and upgrade your OC install in the future. 
+2. For those of you with a different CPU please use the post-install guide on Power Management how to generate new CPUFriendFreind.kext. 
+3. To enable Apple services for you computer, you must fill in the
+   - Serial Number/ MLB/ SmUUID which are currently blank on the EFI 
+   - Please refer to config.plist guide on OC configuration on how to properly generate this information for your hackintosh. 
 
 **BIOS Settings**
 
@@ -83,3 +87,12 @@ Please follow Dortania OC Vanilla guide to create ACPI, gather Kexts, and create
 3. Startup
    - UEFI/Legacy -> Legacy only
    - CSM Support -> No
+   
+   
+### Credits
+
+1. [Opencore Dortania Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+2. [Opencore Hotpatching Guide](https://github.com/jsassu20/OpenCore-HotPatching-Guide)
+3. [Altairko Clover T470s Repo](https://github.com/Altairko/Lenovo-T470s-Clover)
+4. [YBS-Juan OC T470s Repo](https://github.com/YBN-JUAN/T470s-OpenCore-EFI)
+5. [Digitalec Clover T470 Repo](https://github.com/digitalec/thinkmac-t470)
