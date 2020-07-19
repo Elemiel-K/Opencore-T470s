@@ -1,11 +1,11 @@
 # Lenovo Thinkpad T470s 
 ## Opencore Hackintosh
 
-***It should go without saying but I will say it anyway. Hackintoshing is dangerous and could ruin your hardware permanently, I take no responsibility for your stuff, please Hackintosh at your own risk. I own nothing, everything belongs to Apple/Lenovo/OpenCore Team. Thanks.***
+***It should go without saying but I will say it anyway. Hackintoshing is dangerous and could ruin your hardware permanently and I take no responsibility for your stuff. These materials are only provided as an academic curiosity, please Hackintosh at your own risk. No guarantees are implied and no relationship is established between the users of this repo and myself. I own nothing, everything belongs to Apple/Lenovo/OpenCore Team. Thanks.***
 
-I'm creating this repository for those who might be trying to Hackintosh a computer that is similar to mine. I will continue to update the repository every few weeks/months as I improve my ACPI and Kext loadout. 
+I'm creating this repository for those who might be trying to Hackintosh a computer that is similar to mine. I have reached what I beleive to a moderate level of stability with this EFI, and I am unlikely to update this repo until after the puclic release of MacOS 11 Big Sur. Happy Hacking! 
 
-Currently running 10.5.6 Catalina on OC 0.5.9
+Currently running Mac OS 10.15.6 Catalina on OC 0.5.9
 
 ### Hardware Config: 
 
@@ -32,8 +32,8 @@ Currently running 10.5.6 Catalina on OC 0.5.9
 2. Trackpoint and Trackpad with gesture support and Keypad buttons function as well
 3. Touchscreen
 4. Cardreader @ usb 3.0 speeds
-5. USB type A ports
-6. TB3 (Alpine Ridge)/USB type C works. However the ports have only been tested with standard USB 3.0 devices, since I do not posess and working TB3/USB3.1 devices
+5. USB type A ports with USB 3.0 and USB 2.0 support
+6. TB3 (Alpine Ridge)/USB type C works. However the ports have only been tested with standard USB 3.0 devices, since I do not posess any working TB3/USB3.1 devices and therefore cannot test. 
 
 
 ### Untested
@@ -55,6 +55,7 @@ Due to system instability being caused by SSDT-KBD.aml, I have removed the ssdt 
 3. To enable Apple services for you computer, you must fill in the
    - Serial Number/ MLB/ SmUUID which are currently blank on the EFI 
    - Please refer to config.plist guide on OC configuration on how to properly generate this information for your hackintosh. 
+4. The EFI uses the debug version of OC 0.5.9, however the debug options have been turned off. Please refer to OC Debugging page on instruction about turning this back on. 
 
 **BIOS Settings**
 
