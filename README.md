@@ -34,14 +34,14 @@ Currently running Mac OS 10.15.6 Catalina on OC 0.5.9
 4. Cardreader @ usb 3.0 speeds
 5. USB type A ports with USB 3.0 and USB 2.0 support
 6. TB3 (Alpine Ridge)/USB type C works. However the ports have only been tested with standard USB 3.0 devices, since I do not posess any working TB3/USB3.1 devices and therefore cannot test. 
-
+7. HDMI output is quirky, it works but settings have to be tuned. 
 
 ### Untested
 
 1. BT/Wifi - My card is on order and I will update the system with appropriate Kexts once it is delivered. 
 2. WWAN
 3. Smart Card Reader
-
+4. Audio over HDMI
 
 **Note on Keyboard Shortcuts**
 
