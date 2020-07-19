@@ -30,29 +30,26 @@ Currently running 10.5.6 Catalina on OC 0.5.9
 1. All basic functions including sleep/wake and boot without error 
 2. Trackpoint and Trackpad with gesture support and Keypad buttons function as well
 3. Touchscreen
-4. Cardreader
+4. Cardreader @ usb 3.0 speeds
 5. USB type A ports
-6. USB type C works if you boot with device inserted
+6. TB3 (Alpine Ridge)/USB type C works. However the ports have only been tested with standard USB 3.0 devices, since I do not posess and working TB3/USB3.1 devices
 
-### Non functional:
-
-1. TB3 bus
-2. WWAN card
-3. Smart Card
 
 ### Untested
 
 1. BT/Wifi - My card is on order and I will update the system with appropriate Kexts once it is delivered. 
+2. WWAN
+3. Smart Card Reader
 
 
 **Note on Keyboard Shortcuts**
 
-With the use of software called Thinkpad Assistant along with associated ACPI files I've been able to get much functionality out of shortcut keys such as volume control and brightness control. This is still a work in progress and will not be updated along with the repo, please google the software if you are interested. 
+Due to system instability being caused by SSDT-KBD.aml, I have removed the ssdt and replaced it with a couple of smaller SSDTS with more circumscribed functionality. Currently on Volume Controls and Brightness Controls are working as intended on the Laptop Keyboard. I am unlikely to bother further improving this. 
 
 
 ## Installation Instructions:
 
-Please follow OC Vanilla guide to create ACPI, gather Kexts, and create installer. I would recommend reading through the entire process even if you are going to just copy paste this repo into your EFI folder; it will give you the ability to debug and upgrade your OC install in the future. 
+Please follow Dortania OC Vanilla guide to create ACPI, gather Kexts, and create installer. I would recommend reading through the entire process even if you are going to just copy paste this repo into your EFI folder; it will give you the ability to debug and upgrade your OC install in the future. 
 
 
 **BIOS Settings**
@@ -85,4 +82,4 @@ Please follow OC Vanilla guide to create ACPI, gather Kexts, and create installe
    - Device Guard -> Disabled   
 3. Startup
    - UEFI/Legacy -> Legacy only
-   - CSM Support -> Yes
+   - CSM Support -> No
