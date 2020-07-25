@@ -32,17 +32,17 @@ Currently running Mac OS 10.15.6 Catalina on OC 0.5.9
 1. All basic functions including sleep/wake and boot without error including iCloud Services and Wired Ipad Sidecar
 2. Trackpoint and Trackpad with gesture support and Keypad buttons function as well
 3. Touchscreen
-4. Cardreader @ usb 3.0 speeds
+4. SD Cardreader @ usb 3.0 speeds
 5. USB type A ports with USB 3.0 and USB 2.0 support
 6. TB3 (Alpine Ridge)/USB type C works. However the ports have only been tested with standard USB 3.0 devices, since I do not posess any working TB3/USB3.1 devices and therefore cannot test. 
 7. HDMI output is quirky, it works but settings have to be tuned. 
-8. BT 4.2 + Wifi
-9. Smart Card Reader
+8. BT 4.2 + Wifi with original Apple Airport Card
 
 ### Untested
  
 1. WWAN
 2. Audio over HDMI
+3. Smart Card Redear
 
 **Note on Keyboard Shortcuts**
 
@@ -90,7 +90,7 @@ Please follow the instruction for creation of an opencore USBMap given on the Op
    - Intel SGX -> Disabled
    - Device Guard -> Disabled   
 3. Startup
-   - UEFI/Legacy -> Legacy only
+   - UEFI/Legacy -> UEFI only
    - CSM Support -> No
    
    
